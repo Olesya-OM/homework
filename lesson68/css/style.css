@@ -1,0 +1,33 @@
+.container{
+background-color: #000000;
+}
+
+.text{
+    font-size: 46px;
+    color: #fff;
+}
+
+.figures{
+    position: fixed;
+    left: 50%;
+    right: 0;
+    bottom: 100px;
+    
+}
+
+.rectangle{
+    height: 100px;
+    background-color: #fff;
+    border-radius:30px;
+    margin-right: 50px;
+}
+
+.Circle{
+    position: absolute;
+    left: 100px;
+    bottom: 50px;
+    width: 100px;
+    height: 100px;
+    background-color: rgb(136, 2, 2);
+    border-radius:50%;
+}
