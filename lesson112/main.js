@@ -22,7 +22,7 @@ modal.addEventListener('click', event => {
     }
 })
 
-document.addEventListener('keydow', event => {
+document.addEventListener('keydown', event => {
     if ( event.code === 'Escape' && modal.classList.contains('modal--open')) {
         modal.classList.toggle('modal--open')
     }
