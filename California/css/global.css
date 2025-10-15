@@ -1,0 +1,163 @@
+:root {
+    --general-text: #312c27;
+    --accent-text: #1f1711;
+    --general-bg: #fff9f4;
+    --accent-bg: #ffe0cb;
+    --accent-color: #ffa55c;
+    --accent-color-2: #ceaad0;
+    --input-color: #AC907A;
+    --transition: all .4s;
+    --border-radius: 20px;
+}
+body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.main {
+    flex: 1 1 auto;
+    min-width: 400px;
+}
+
+.container{
+    max-width: 1325px;
+    margin: 0px auto;
+    padding: 0 15px;
+}
+
+.button {
+    display: flex;
+    align-items: center;
+}
+
+.modal__window__container {
+    z-index: 60;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: #DCE5E2;
+    transition: all 0.8s ease 0s;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease 0s;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.menu__close {
+    display: flex;
+    margin: 15px 0 0 0;
+    justify-content: flex-end;
+    max-height: 36px;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.close__icon {
+    width: 36px;
+    height: 36px;
+}
+
+.modal__menu {
+    z-index: 60;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    transition: all 0.8s ease 0s;
+    margin-bottom: 100px;
+}
+
+.modal__list {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    text-transform: uppercase;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #000;
+    white-space: nowrap;
+}
+
+.modal__item {
+    padding: 20px 0;
+    transition: all 0.3s ease 0s;
+}
+
+.modal__link {
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    background-image: linear-gradient(#000, #000);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size 1s;
+}
+
+.modal__link:visited {
+    color: #000000;
+}
+
+.open {
+    background-size: 100% 2px;
+}
+
+.hidden__list {
+    opacity: 0;
+    visibility: hidden;
+    transform: perspective(600px) translate(0px, -100%) rotateX(45deg);
+}
+
+.collapsible {
+    background-color: #F8F9FA;
+    color: #000;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-family: 'Readex Pro';
+    text-align: left;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 125%;
+    padding-bottom: 4px;
+    background-color: #F8F9FA;
+}
+
+.collap__img {
+    padding: 0 5px;
+    display: none;
+    transition: all 0.3s ease 0s;
+}
+
+.active,
+.collapsible:hover {
+    background-color: #F8F9FA;
+}
+
+.rotate {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+.content {
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    color: #000;
+    max-height: 147px;
+    background-color: #F8F9FA;
+}
